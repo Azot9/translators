@@ -1,0 +1,16 @@
+float value, b, 11b;
+int c, d;
+{
+b=7.1;
+c = 10e1;
+@lab;
+value = value + (b*(c+a)/d);
+for(value=0; value>b; value+1)
+    cout<<value;
+    if (c<=10) {
+         if (b>=12){
+              cin>>d;
+         };
+    };
+goto lab;
+}

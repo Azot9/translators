@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Translyator</title>
+	 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+	<input type="file" name="program" id="program" accept='text/plain' onchange='openFile()'>
+	<img id="output">
+	<div class="container" id="cont">
+		<H2> Lexem Table </H2>
+   	<table id="lexemTable" class="table table-bordered">
+    	<tr>
+    	   <thead>
+   	 	   <th scope="col">Number</th>
+     	   <th scope="col">Line</th>
+    	   <th scope="col">Code</th>
+           <th scope="col">Value</th>
+           <th scope="col">IDN Code</th>
+           <th scope="col">CON Code</th>
+       	   </thead>
+       	   <tbody id="tbodyLexem">
+       	   </tbody>
+    </table>
+    <br>
+		<H2> IDN Table </H2>
+   	<table id="idnTable" class="table table-bordered">
+    	<tr>
+    	   <thead>
+   	 	   <th scope="col">Number</th>
+     	   <th scope="col">Value</th>
+     	   <th scope="col">Type</th>
+       	   </thead>
+       	   <tbody id="tbodyIDN">
+       	   </tbody>
+    </table>    
+    <br>
+		<H2> Constants Table </H2>
+   	<table id="conTable" class="table table-bordered">
+    	<tr>
+    	   <thead>
+   	 	   <th scope="col">Constant code</th>
+     	   <th scope="col">Value</th>
+       	   </thead>
+       	   <tbody id="tbodyCON">
+       	   </tbody>
+    </table>    
+</div>
+ 	<script type="text/javascript" src="draw.js"></script> 	
+ 	<script type="text/javascript" src="LA.js"></script> 	
+
+</body>
+</html>

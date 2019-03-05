@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Translyator</title>
+		<meta charset="utf-8">
+	 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<!--	<link rel="canonical" href="https://mdbootstrap.com/docs/jquery/forms/textarea/"> -->
+		<link rel="stylesheet" type="text/css" href="trans.css"> 
+</head>
+<body>
+	<input type="file" name="program" id="program" accept='text/plain' onchange='openFile()'>
+	<img id="output">
+
+	<div id="textA">
+		<div class="form-group" id="forCode">
+  			<label for="exampleFormControlTextarea1">Input Code</label>
+ 			 <textarea class="form-control rounded-0" id="exampleFormControlTextarea1" wrap="hard" rows="20" onchange='addText()'></textarea>
+		</div>
+	</div>
+
+
+	<div class="container" id="cont">
+		<H2> Lexem Table </H2>
+   	<table id="lexemTable" class="table table-bordered">
+    	<tr>
+    	   <thead>
+   	 	   <th scope="col">Number</th>
+     	   <th scope="col">Line</th>
+    	   <th scope="col">Code</th>
+           <th scope="col">Value</th>
+           <th scope="col">IDN Code</th>
+           <th scope="col">CON Code</th>
+       	   </thead>
+       	   <tbody id="tbodyLexem">
+       	   </tbody>
+    </table>
+    <br>
+		<H2> IDN Table </H2>
+   	<table id="idnTable" class="table table-bordered">
+    	<tr>
+    	   <thead>
+   	 	   <th scope="col">Number</th>
+     	   <th scope="col">Value</th>
+     	   <th scope="col">Type</th>
+       	   </thead>
+       	   <tbody id="tbodyIDN">
+       	   </tbody>
+    </table>    
+    <br>
+
+		<H2> Constants Table </H2>
+   	<table id="conTable" class="table table-bordered">
+    	<tr>
+    	   <thead>
+   	 	   <th scope="col">Constant code</th>
+     	   <th scope="col">Value</th>
+       	   </thead>
+       	   <tbody id="tbodyCON">
+       	   </tbody>
+    </table>  
+       
+        <H2> Syntax Table </H2>
+    <table id="syntaxTable" class="table table-bordered">
+      <tr>
+         <thead>
+         <th scope="col">number</th>
+         <th scope="col">lexem</th>
+         <th scope="col">state</th>
+         <th scope="col">stack</th>
+           </thead>
+           <tbody id="tbodySyn">
+           </tbody>
+    </table>  
+   
+    <br>
+
+ 
+</div>
+
+ 	<script type="text/javascript" src="draw.js"></script> 	
+  <script type="text/javascript" src="states.js"></script>  
+  <script type="text/javascript" src="SA2.js"></script> 
+ <!--	<script type="text/javascript" src="SA1.js"></script> 	-->
+ 	<script type="text/javascript" src="LA.js"></script> 	
+
+
+</body>
+</html>

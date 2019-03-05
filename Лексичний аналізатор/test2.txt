@@ -1,0 +1,14 @@
+float value, b;
+int c, d;
+{
+b=7.111e-1 1.e-11 .11e+233;
+c = 10e1;
+@lab:
+for(value=0; value<b;  value+1) 
+cout<<value;
+if (c>=-.700-1..1 11.11.1)  {
+cin>>d;
+goto lab; 
+}
+value = value + b*(c/d);
+}

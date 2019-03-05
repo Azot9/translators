@@ -1,0 +1,7 @@
+float test, b;
+int c;
+
+{
+cin<<a<<b;
+c = a+b;
+}
