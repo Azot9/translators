@@ -1,9 +1,9 @@
-const EQUEL = "=";
-const MORE = ">";
-const LESS = "<";
+// const EQUEL = "=";
+// const MORE = ">";
+// const LESS = "<";
 
 
-let drawer = new Draw();
+//let drawer = new Draw();
 let currentLexem;
 let isSet;
 let lessTemp = [];
@@ -98,7 +98,7 @@ function setDeepMore(rules, equel){
 
 
 function thirdRule(rules, equel, isRecursive = false) {
-		console.log(rules);
+		//console.log(rules);
 
 	if (grammar[rules].rule !== undefined && grammar[equel].rule !== undefined) {
 		for (let i = 0; i < grammar[rules].rule.length; i++) {

@@ -2,3 +2,22 @@
 	position: absolute;
 	left: 5px;
 }
+textarea {
+	position: relative;
+	width: 500px;
+	height: 400px;
+}
+
+.form-group{
+	position: relative;
+	left: 25%;
+	width: 50%;
+	height: 50%;
+}
+
+#forCode{
+	position: relative;
+	left: 25%;
+	width: 50%;
+	height: 50%;
+}

@@ -7,6 +7,14 @@
 	<link rel="stylesheet" type="text/css" href="trans.css"> 
 </head>
 <body>
+		<input type="file" name="program" id="program" accept='text/plain' onchange='openFile()'>
+
+		<div id="textA">
+				<div class="form-group" id="forCode">
+					  <label for="exampleFormControlTextarea1">Input Code</label>
+					  <textarea class="form-control rounded-0" id="exampleFormControlTextarea1" wrap="hard" rows="20" onchange='addText()'></textarea>
+				</div>
+			</div>
 
 
 	<div class="container" id="cont">
@@ -21,10 +29,11 @@
        	   </tbody>
     </table>
 </div>
-
 	<script type="text/javascript" src="draw.js"></script>
-	<script type="text/javascript" src="grammar1.js"></script>
+	<script type="text/javascript" src="LA.js"></script>
+	<script type="text/javascript" src="grammar4.js"></script>
 	<script type="text/javascript" src="prefixGrammar.js"></script>
+	<script type="text/javascript" src="SA3.js"></script>
 
 </body>
 </html>

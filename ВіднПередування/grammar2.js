@@ -28,12 +28,15 @@ let grammar = {
 				    ["appropriation"], ["goto"], ["label"] ] 
 		},
 		cycle: { 
-			rule: [ ["for", "(", "appropriation1", ";1", "relation", ";2", "E1", ")1", "{", "operatorsList1", "}"],
-				    ["for", "(", "appropriation1", ";1", "relation", ";2", "E1", ")1", "operator"] ] 
+			rule: [ ["for", "(1", "appropriation1", ";1", "relation", ";2", "E1", ")1", "{", "operatorsList1", "}"],
+				    ["for", "(1", "appropriation1", ";1", "relation", ";2", "E1", ")1", "operator"] ] 
 				},
+		relation1: { 
+			rule: [ ["relation"] ] 
+		},
 		conditionalTransition: { 
-			rule: [ ["if", "(", "relation", ")1", "{", "operatorsList1", "}"], 
-					["if", "(", 'relation', ")1", "operator"] ] 
+			rule: [ ["if", "(", "relation1", ")1", "{", "operatorsList1", "}"], 
+					["if", "(", 'relation1', ")1", "operator"] ] 
 		},
 		input: { 
 			rule: [ ["cin", ">>", "idn"], ["input", ">>", "idn"] ] 
